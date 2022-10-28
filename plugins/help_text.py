@@ -117,7 +117,7 @@ async def start(bot, update):
           InlineKeyboardButton('📍 CHANNEL', url='https://t.me/DK_Gru'),
       ],
       [
-          InlineKeyboardButton('💝 GROUP', url='https://t.me/LISA_FAN_LK'),
+          InlineKeyboardButton('💝 GROUP', url='https://t.me/DK_HDmovie'),
           InlineKeyboardButton('🌝 SOURCE', url='https://github.com/Dkmovie/UPLOADER-BOT-V2'),
           ]
         ]
