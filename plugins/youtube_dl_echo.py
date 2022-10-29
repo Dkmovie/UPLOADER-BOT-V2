@@ -100,7 +100,8 @@ async def echo(bot, update):
         stderr=asyncio.subprocess.PIPE,
     )
     stdout, stderr = await process.communicate()
-    await bot.edit_message_text(text="⚡", reply_to_message_id=update.message_id",
+    await bot.edit_message_text(
+    imog = await update.reply_text="⚡", reply_to_message_id=update.message_id",
         chat_id=update.chat.id,
         message_id=imog.message_id
     )
