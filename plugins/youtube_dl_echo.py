@@ -24,7 +24,7 @@ from pyrogram.errors import UserNotParticipant
 @Clinton.on_message(filters.private & filters.regex(pattern=".*http.*"))
 async def echo(bot, update):
     await AddUser(bot, update)
-    imog = await update.reply_text("<b>Processing... ⏳</b>",)
+    imog = await update.reply_text("⚡", reply_to_message_id=update.message_id)
     if os.path.exists(Config.DOWNLOAD_LOCATION + "/" + str(update.chat.id) + ".json"):
         await bot.edit_message_text(
             text=Translation.WAIT_PROCESS_FINISH,
@@ -101,7 +101,7 @@ async def echo(bot, update):
     )
     stdout, stderr = await process.communicate()
     await bot.edit_message_text(
-        text="<b>Processing... ⌛</b>",
+        text=""⚡", reply_to_message_id=update.message_id",
         chat_id=update.chat.id,
         message_id=imog.message_id
     )
