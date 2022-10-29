@@ -101,7 +101,7 @@ async def echo(bot, update):
     )
     stdout, stderr = await process.communicate()
     await bot.edit_message_text(
-        text=""⚡", reply_to_message_id=update.message_id",
+        text="⚡", reply_to_message_id=update.message_id",
         chat_id=update.chat.id,
         message_id=imog.message_id
     )
